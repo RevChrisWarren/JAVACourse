@@ -2,3 +2,7 @@ Learning for Morning of 11-17-22
 Writing methods
 Using for loop in methods
 Adding parameters to methods
+
+Creating method for multiplication table
+Using more than one parameter
+Learning how to return a value from a method
