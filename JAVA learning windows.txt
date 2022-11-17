@@ -1,0 +1,4 @@
+Learning for Morning of 11-17-22
+Writing methods
+Using for loop in methods
+Adding parameters to methods
