@@ -3,20 +3,18 @@ package com.in28minutes.newjavaproject;
 public class MultiplicationTable {
 	void print() {
 
-	for(int i = 0; i<=10; i++) {
-		System.out.printf("%d * %d = %d", 5, i, 5*i).println();
+		print(5, 1, 10);
 	}
-}
+
 	void print(int num) {
 
-		for(int i = 0; i<=10; i++) {
-			System.out.printf("%d * %d = %d", num, i, num*i).println();
-		}
+		print(num, 1, 10);
 	}
+
 	void print(int num, int start, int finish) {
 
-		for(int i = start; i<=finish; i++) {
-			System.out.printf("%d * %d = %d", num, i, num*i).println();
+		for (int i = start; i <= finish; i++) {
+			System.out.printf("%d * %d = %d", num, i, num * i).println();
 		}
 	}
 }
