@@ -3,10 +3,15 @@ package com.in28minutes.newjavaproject;
 public class BookRunner {
 
 	public static void main(String[] args) {
-		Book artOfComputerProgramming = new Book();
-		Book effectiveJava = new Book();
-		Book cleanCode = new Book();
+		Book artOfComputerProgramming = new Book(20);
+		Book effectiveJava = new Book(15);
+		Book cleanCode = new Book(17);
 
+		System.out.println(artOfComputerProgramming.getNoOfCopies());
+		System.out.println(effectiveJava.getNoOfCopies());
+		System.out.println(cleanCode.getNoOfCopies());
+
+		
 		artOfComputerProgramming.setNoOfCopies(14);
 		effectiveJava.setNoOfCopies(42);
 		cleanCode.setNoOfCopies(12);
