@@ -8,7 +8,8 @@ public class MotorBike {
 	// method: inputs (int speed) output (void) name (setSpeed)
 
 	void setSpeed(int speed) {
-		this.speed = speed;
+		if (speed >= 0)
+			this.speed = speed;
 
 	}
 
