@@ -6,6 +6,11 @@ public class BookRunner {
 		Book artOfComputerProgramming = new Book();
 		Book effectiveJava = new Book();
 		Book cleanCode = new Book();
+
+		artOfComputerProgramming.setNoOfCopies(14);
+		effectiveJava.setNoOfCopies(42);
+		cleanCode.setNoOfCopies(12);
+
 	}
 
 }
