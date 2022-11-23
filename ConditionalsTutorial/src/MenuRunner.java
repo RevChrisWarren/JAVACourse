@@ -19,16 +19,33 @@ public class MenuRunner {
 	System.out.println("Enter 4 for  multiplication");
 	int number3 = scanner3.nextInt();
 	
-	if(number3 == 1) {
-		System.out.println(number1 + number2);
-	} else if(number3 == 2) {
-		System.out.println(number1 - number2);
-	} else if(number3 == 3) {
-		System.out.println(number1 / number2);
-	} else if(number3 == 1) {
-		System.out.println(number1 + number2);
-	} else if(number3 == 4) {
-		System.out.println(number1 * number2);
-	} else System.out.println("Operation not understood");
+	performOperationUsingSwitch(number1, number2, number3);
 }
+
+	private static void performOperationUsingNestedIfElse(int number1, int number2, int number3) {
+		if(number3 == 1) {
+			System.out.println(number1 + number2);
+		} else if(number3 == 2) {
+			System.out.println(number1 - number2);
+		} else if(number3 == 3) {
+			System.out.println(number1 / number2);
+		} else if(number3 == 1) {
+			System.out.println(number1 + number2);
+		} else if(number3 == 4) {
+			System.out.println(number1 * number2);
+		} else System.out.println("Operation not understood");
+	}
+	private static void performOperationUsingSwitch(int number1, int number2, int number3) {
+		switch (number3){
+		case 1: 
+			System.out.println(number1 + number2); break;
+		case 2: 
+			System.out.println(number1 - number2);break;
+		case 3: 
+			System.out.println(number1 / number2);break;
+		case 4: 
+			System.out.println(number1 * number2);break;
+		default: System.out.println("Operation not understood");break;
+	}
+		}
 }
