@@ -10,7 +10,7 @@ if (i == 25) {
 	System.out.println("i is equal to 24");
 }
 else {
-	System.out.println("i is not equal to 25");
+	System.out.println("i is not equal to 25 or 24");
 }
 	}
 
