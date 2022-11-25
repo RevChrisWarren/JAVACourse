@@ -2,7 +2,7 @@
 public class MyNumberRunner {
 
 	public static void main(String[] args) {
-		MyNumber number = new MyNumber(5);
+		MyNumber number = new MyNumber(15);
 boolean isPrime = number.isPrime();
 System.out.println("isPrime " + isPrime);
 int sum = number.sumUpToN();

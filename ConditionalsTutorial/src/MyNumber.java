@@ -39,8 +39,10 @@ public class MyNumber {
 
 			public void printNumberTriangle() {
 				for (int i = 1; i <= num; i++) {
-					System.out.print(i+ " ");
-					
+					for(int j = 1; j<=i; j++) {
+						System.out.print(j+ " ");
+					}
+					System.out.println();
 						
 	}
 				
