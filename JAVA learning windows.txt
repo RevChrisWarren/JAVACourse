@@ -15,3 +15,5 @@ subString
 contains
 isEqual
 etc.
+
+Wrapper classes: classes that correspond to primitive values.
