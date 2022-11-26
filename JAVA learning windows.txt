@@ -6,3 +6,12 @@ Adding parameters to methods
 Creating method for multiplication table
 Using more than one parameter
 Learning how to return a value from a method
+
+11-26-22
+
+Today's morning learning is String methods:
+charAt
+subString
+contains
+isEqual
+etc.
