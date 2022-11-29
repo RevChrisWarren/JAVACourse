@@ -6,7 +6,7 @@ public class StudentMarksArrayRunner {
 
 	public static void main(String[] args) {
 		int[] marks = { 98, 99, 94, 90 };
-		Student student = new Student("name", marks);
+		Student student = new Student("Chris", 98, 99, 100, 65, 98);
 		int number = student.getNumberOfMarks();
 		System.out.println("number of marks: " + number);
 		int sum = student.getTotalSumOfMarks();
