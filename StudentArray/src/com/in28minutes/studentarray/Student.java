@@ -2,25 +2,28 @@ package com.in28minutes.studentarray;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.util.ArrayList;
 
 public class Student {
 
 	private String name;
-	private int[] marks;
+	private ArrayList<Integer> marks = new ArrayList<Integer>();
 
 	public Student(String name, int... marks) {
 		this.name = name;
-		this.marks = marks;
+		for (int mark : marks) {
+			this.marks.add(mark);
+		}
 	}
 
 	public int getNumberOfMarks() {
-		return marks.length;
+		return marks.size();
 	}
 
 	public int getTotalSumOfMarks() {
 		int sum = 0;
-		for (int i = 0; i < marks.length; i++) {
-			sum = sum + marks[i];
+		for (int mark : marks) {
+			sum += mark;
 		}
 		return sum;
 	}
@@ -52,5 +55,9 @@ public class Student {
 		int number = getNumberOfMarks();
 
 		return new BigDecimal(sum).divide(new BigDecimal(number), 3, RoundingMode.UP);
+	}
+
+	public String toString() {
+		return name + marks;
 	}
 }
