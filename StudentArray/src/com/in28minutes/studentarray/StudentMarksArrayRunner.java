@@ -19,6 +19,12 @@ public class StudentMarksArrayRunner {
 		System.out.println("Average: " + average);
 
 		System.out.println(student);
+
+		student.addNewMark(150);
+		System.out.println(student);
+
+		student.removeMarkAtIndex(0);
+		System.out.println(student);
 	}
 
 }
