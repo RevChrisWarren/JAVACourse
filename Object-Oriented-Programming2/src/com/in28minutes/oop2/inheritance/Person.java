@@ -9,7 +9,8 @@ public class Person {
 		return name;
 	}
 
-	public void setName(String name) {
+	public Person(String name) {
+		super();
 		this.name = name;
 	}
 

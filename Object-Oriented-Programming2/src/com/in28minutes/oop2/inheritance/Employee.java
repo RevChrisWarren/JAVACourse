@@ -6,6 +6,11 @@ public class Employee extends Person {
 	private int employeeGrade;
 	private int salary;
 
+	public Employee(String name, String title) {
+		super(name);
+		this.title = title;
+	}
+
 	public String getTitle() {
 		return title;
 	}
