@@ -1,8 +1,29 @@
 package collections;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class GenericsRunner {
 
+	static <X> X doubleValue(X value) {
+		return value;
+	}
+
+	static <X extends List> void duplicate(X list) {
+		list.addAll(list);
+	}
+
 	public static void main(String[] args) {
+
+		String value1 = doubleValue(new String());
+		Integer number1 = doubleValue(Integer.valueOf(5));
+		ArrayList newList = doubleValue(new ArrayList());
+
+		ArrayList<Integer> numbers = new ArrayList<>(List.of(1, 2, 3, 4, 5, 6, 7));
+
+		duplicate(numbers);
+		System.out.println(numbers);
+
 		MyCustomList<String> list = new MyCustomList<>();
 		list.addElement("Element1");
 		list.addElement("Element2");
