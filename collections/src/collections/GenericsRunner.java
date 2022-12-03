@@ -13,7 +13,18 @@ public class GenericsRunner {
 		list.addAll(list);
 	}
 
+	// Wildcards
+	static double sumOfNumberList(List<? extends Number> numbers) {
+		double sum = 0.0;
+		for (Number number : numbers) {
+			sum += number.doubleValue();
+		}
+		return sum;
+	}
+
 	public static void main(String[] args) {
+
+		System.out.println(sumOfNumberList(List.of(1, 2, 3, 4, 5, 6, 7, 8, 9)));
 
 		String value1 = doubleValue(new String());
 		Integer number1 = doubleValue(Integer.valueOf(5));
