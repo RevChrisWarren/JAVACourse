@@ -8,6 +8,7 @@ public class FunctionalProgrammingRunner {
 		List<String> list = List.of("Apple", "Banana", "Cherry", "Doughnut");
 
 		printWithFP(list);
+		printWithFPWithFiltering(list);
 
 	}
 
@@ -19,6 +20,10 @@ public class FunctionalProgrammingRunner {
 
 	private static void printWithFP(List<String> list) {
 		list.stream().forEach(element -> System.out.println(element));
+	}
+
+	private static void printWithFPWithFiltering(List<String> list) {
+		list.stream().filter(element -> element.endsWith("a")).forEach(element -> System.out.println(element));
 	}
 
 }
