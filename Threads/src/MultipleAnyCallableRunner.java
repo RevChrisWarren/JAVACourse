@@ -3,8 +3,9 @@ import java.util.List;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 
-public class MultipleCallableRunner {
+public class MultipleAnyCallableRunner {
 
 	public static void main(String[] args) throws InterruptedException, ExecutionException {
 		ExecutorService executor = Executors.newFixedThreadPool(1);
@@ -13,10 +14,11 @@ public class MultipleCallableRunner {
 				new CallableTask("Chris"), new CallableTask("Pickles"));
 
 		// Future is promise
-		String result = executor.invokeAny(list);
+		List<Future<String>> results = executor.invokeAll(list);
 
-		System.out.println(result);
-
+		for (Future<String> result : results) {
+			System.out.println(result.get());
+		}
 		executor.shutdown();
 
 	}
